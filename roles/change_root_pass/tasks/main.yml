@@ -1,0 +1,10 @@
+---
+- name: change_root_pass      
+  vmware_local_user_manager:
+    hostname: '{{ inventory_hostname }}'
+    username: '{{ esxi_root_user }}'
+    password: '{{ esxi_root_pass }}'
+    local_user_name: '{{ new_esx_local_root_user }}'
+    local_user_password: '{{ new_esx_local_root_pass }}'
+    validate_certs: False
+  delegate_to: localhost  

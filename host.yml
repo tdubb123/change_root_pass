@@ -1,0 +1,9 @@
+- name: Gather facts about ESXi Host
+  community.vmware.vmware_host_config_facts:
+    hostname: '{{ vcenter_hostname }}'
+    username: '{{ vcenter_username }}'
+    password: '{{ vcenter_password }}'
+    esxi_hostname: '{{ esxi_hostname }}'
+  delegate_to: localhost
+  vars_files:
+   - answerfile.yml

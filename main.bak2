@@ -1,0 +1,13 @@
+---
+- name: "change the root password"
+  hosts: localhost
+  tasks: 
+    - name: "change root pass"
+      community.vmware.vmware_local_user_manager:  
+       hostname: "va-esxi2.wsgr.com"
+       username: "root"
+       password: "4r8d3rzs!"
+       local_user_name: "root"
+       local_user_password: "Hello123!"
+       state: present
+       validate_certs: no

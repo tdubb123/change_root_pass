@@ -1,0 +1,5 @@
+[esx]
+va-esxi2.wsgr.com
+va-esxi5.wsgr.com
+[esx:vars]
+ansible_python_interpreter=/usr/bin/python3

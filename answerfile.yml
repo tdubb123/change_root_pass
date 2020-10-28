@@ -1,5 +1,5 @@
 esxi_root_user: 'root'
-esxi_root_pass: '4r8d3rzs!'
+esxi_root_pass: 'xxxxxx'
 new_esx_local_root_user: 'root'
-new_esx_local_root_pass: 'Hello123!'
+new_esx_local_root_pass: 'yyyyyyy'
 
